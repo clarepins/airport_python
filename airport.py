@@ -6,9 +6,7 @@ class Airport():
         self.planes = []
 
     def land(self, plane):
-        w = self.stormy()
-        print(w)
-        if w == True:
+        if self.stormy() == True:
             raise Exception('Plane cannot land')
         else:
             self.planes.append(plane)
